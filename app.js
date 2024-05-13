@@ -26,7 +26,7 @@ app.post('/users', (req, res) => {
   // Save the user to the database or storage solution
   users.push(newUser);
 
-  return res.status(201).json({ message: 'User created successfully', user: newUser });
+  return res.status(201).json({ message: 'User created successfully for new user', user: newUser });
 });
 
 app.get('/users', (req, res) => {
