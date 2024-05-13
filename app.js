@@ -17,7 +17,7 @@ app.post('/users', (req, res) => {
   // Check if the user already exists
   const existingUser = users.find(user => user.email === email);
   if (existingUser) {
-    return res.status(409).json({ error: 'User already exists' });
+    return res.status(409).json({ error: 'User already exists in the db' });
   }
 
   // Create a new user object
